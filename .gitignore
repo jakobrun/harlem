@@ -1,0 +1,5 @@
+client/bower_components
+client/bin/game.js
+client/remote/bin/remote.js
+node_modules
+project.sublime-project
