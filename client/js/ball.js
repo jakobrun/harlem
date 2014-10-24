@@ -10,7 +10,7 @@ module.exports = function balls(world) {
 
     world.addContactMaterial(ballMaterial.physical, material.getDefault().physical, {
         friction: 0.2,
-        restitution: 0.93
+        restitution: 0.73
     });
 
     return function create() {

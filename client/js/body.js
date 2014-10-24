@@ -13,8 +13,7 @@ module.exports = function createBody(shape, options) {
     });
     var mesh = new THREE.Mesh(shape.geometry, material.view);
     body.addShape(shape.shape);
-    body.linearDamping = options.linearDamping || 0.4;
-    // body.angularDamping = 0.01;
+    body.linearDamping = options.linearDamping || 0.2;
     body.position.set(x, y, z);
     mesh.position.set(x, y, z);
     mesh.castShadow = true;

@@ -101,7 +101,7 @@ module.exports = function createWorld(game) {
             world.addContactMaterial(physicsContactMaterial);
             return w;
         },
-        addPointToPointContraint: function(body1, v1, body2, v2) {
+        addPointToPointConstraint: function(body1, v1, body2, v2) {
             var c = new CANNON.PointToPointConstraint(body1.body, new CANNON.Vec3(v1.x, v1.y, v1.z), body2.body, new CANNON.Vec3(v2.x, v2.y, v2.z));
             world.addConstraint(c);
             return w;

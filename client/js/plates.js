@@ -22,7 +22,7 @@ module.exports = function createPlates(world, x, y, z) {
 
         if (i !== 0) {
             // Connect this body to the last one
-            world.addPointToPointContraint(plate, {
+            world.addPointToPointConstraint(plate, {
                 x: -size,
                 y: size + space,
                 z: 0
@@ -31,7 +31,7 @@ module.exports = function createPlates(world, x, y, z) {
                 y: -size - space,
                 z: 0
             });
-            world.addPointToPointContraint(plate, {
+            world.addPointToPointConstraint(plate, {
                 x: size,
                 y: size + space,
                 z: 0
